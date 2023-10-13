@@ -1,0 +1,65 @@
+/* google font cdn */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Poppins&family=Yanone+Kaffeesatz:wght@500;600;700&display=swap');
+
+body {
+    /* web bg */
+    background: #2F2E2E;
+}
+
+* {
+    /* font declaration */
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+hr {
+    /* hr custom */
+    border: 5px solid grey;
+    border-radius: 5px;
+}
+
+#data {
+    /* hide display */
+    display: none;
+}
+
+@media screen and (max-width:391px) {
+    #search_input {
+        max-width: 300px;
+    }
+
+    #search_button {
+        margin-left: 35vw;
+    }
+}
+
+@media screen and (max-width:644px) {
+    #search_input {
+        max-width: 450px;
+    }
+
+    #search_button {
+        margin-left: 35vw;
+    }
+}
+
+@media screen and (max-width:766px) {
+    #search_input {
+        max-width: 450px;
+    }
+
+    #search_button {
+        margin-left: 30vw;
+    }
+}
+
+@media screen and (max-width:628px) {
+    #search_input {
+        max-width: 450px;
+    }
+
+    #search_button {
+        margin-left: 35vw;
+    }
+}

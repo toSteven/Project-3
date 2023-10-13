@@ -34,6 +34,12 @@ function OpenWeather(target) {
                 Weather_Img.src = "imgs/mist.png";
             } else if (data.weather[0].main == "Drizzle") {
                 Weather_Img.src = "imgs/drizzle.png";
+            }else if (data.weather[0].main == "Thunderstorm") {
+                Weather_Img.src = "imgs/thunderstorm.png";
+            }else if (data.weather[0].main == "Smoke") {
+                Weather_Img.src = "imgs/smoke.png";
+            }else if (data.weather[0].main == "Fog") {
+                Weather_Img.src = "imgs/fog.png";
             }
 
             // shot data display

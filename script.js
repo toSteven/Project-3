@@ -21,7 +21,7 @@ function OpenWeather(target) {
             // get element and set to temp variable
             let Weather_Img = document.querySelector('#weatherImg');
 
-            // weather imd conditions
+            // weather conditions
             if (data.weather[0].main == "Clouds") {
                 Weather_Img.src = "imgs/clouds.png";
             } else if (data.weather[0].main == "Rain") {
@@ -34,11 +34,11 @@ function OpenWeather(target) {
                 Weather_Img.src = "imgs/mist.png";
             } else if (data.weather[0].main == "Drizzle") {
                 Weather_Img.src = "imgs/drizzle.png";
-            }else if (data.weather[0].main == "Thunderstorm") {
+            } else if (data.weather[0].main == "Thunderstorm") {
                 Weather_Img.src = "imgs/thunderstorm.png";
-            }else if (data.weather[0].main == "Smoke") {
+            } else if (data.weather[0].main == "Smoke") {
                 Weather_Img.src = "imgs/smoke.png";
-            }else if (data.weather[0].main == "Fog") {
+            } else if (data.weather[0].main == "Fog") {
                 Weather_Img.src = "imgs/fog.png";
             }
 
@@ -54,6 +54,7 @@ function OpenWeather(target) {
             location.reload();
         });
 }
+
 // button click event
 document.querySelector('#search_button').addEventListener('click', () => {
     // input condition

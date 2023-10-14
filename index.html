@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌥️Weather App</title>
+    <title>Weather App</title>
 
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+
+    <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!-- custom css -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main class="container">
-        <div class="card mt-5 shadow">
+        <div class="card mt-5 shadow rounded-5">
             <div class="card-body">
                 <!-- headder -->
                 <h1 class="display-1 text-center">🌥️Weather App</h1>
@@ -31,12 +36,13 @@
 
                     <!-- search btn -->
                     <div class="col-md-1">
-                        <button id="search_button" class="btn btn-dark mt-3"> Search
+                        <button id="search_button" class="btn btn-dark mt-3 rounded-5"> Search
                         </button>
                     </div>
                 </section>
-            
+
                 <hr>
+
                 <!-- data section -->
                 <section id="data">
                     <!-- city data -->
@@ -50,6 +56,7 @@
                                 <div class="col-md-6">
                                     <img id="weatherImg" src="imgs/clouds.png" alt="">
                                 </div>
+
                                 <!-- weather-status -->
                                 <div class="col-md-6 my-4">
                                     <h1 id="weatherStatus" class="display-2">---</h1>
@@ -58,6 +65,7 @@
                             </div>
                         </div>
                     </section>
+
                     <!-- data-display-2 -->
                     <div class="container">
                         <div class="row text-center">
@@ -66,6 +74,7 @@
                                 <h1 class="display-4">County: <span id="country">---</span> </h1>
                                 <h1 class="display-4">Humid: <span id="humid">---</span> </h1>
                             </div>
+
                             <!-- sub-data-2 -->
                             <div class="col-md-6">
                                 <h1 class="display-4">Temp: <span id="temp">---</span> </h1>
@@ -76,9 +85,11 @@
                 </section>
             </div>
         </div>
-        <h4 class="mt-3 text-center ">Developed by <strong>Ramos Howard</strong> & <strong>Cyrille Isayas 💻</strong></h4>
+        <h4 class="mt-4 text-center ">Developed by <strong>Ramos Howard</strong> & <strong>Cyrille Isayas 💻</strong>
+        </h4>
     </main>
 
+    <!-- bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -86,6 +97,7 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
+    <!-- custom js -->
     <script src="script.js"></script>
 </body>
 
